@@ -22,6 +22,7 @@
 		DBBF800D18DFB4CE00A953E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBBF800B18DFB4CE00A953E3 /* InfoPlist.strings */; };
 		DBBF800F18DFB4CE00A953E3 /* JCRSlideCollectionViewCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBF800E18DFB4CE00A953E3 /* JCRSlideCollectionViewCellTests.m */; };
 		DBBF801B18DFB59A00A953E3 /* JCRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBF801A18DFB59A00A953E3 /* JCRViewController.m */; };
+		DBBF802018DFB8C500A953E3 /* JCRSlideCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBF801F18DFB8C500A953E3 /* JCRSlideCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		DBBF800E18DFB4CE00A953E3 /* JCRSlideCollectionViewCellTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCRSlideCollectionViewCellTests.m; sourceTree = "<group>"; };
 		DBBF801918DFB59A00A953E3 /* JCRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCRViewController.h; sourceTree = "<group>"; };
 		DBBF801A18DFB59A00A953E3 /* JCRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRViewController.m; sourceTree = "<group>"; };
+		DBBF801E18DFB8C500A953E3 /* JCRSlideCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCRSlideCollectionViewCell.h; sourceTree = "<group>"; };
+		DBBF801F18DFB8C500A953E3 /* JCRSlideCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRSlideCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,7 @@
 				DBBF7FF518DFB4CE00A953E3 /* Main_iPad.storyboard */,
 				DBBF7FFB18DFB4CE00A953E3 /* Images.xcassets */,
 				DBBF801818DFB59A00A953E3 /* ViewControllers */,
+				DBBF801D18DFB8A500A953E3 /* Views */,
 				DBBF7FE718DFB4CE00A953E3 /* Supporting Files */,
 			);
 			path = JCRSlideCollectionViewCell;
@@ -161,6 +165,15 @@
 				DBBF801A18DFB59A00A953E3 /* JCRViewController.m */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DBBF801D18DFB8A500A953E3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DBBF801E18DFB8C500A953E3 /* JCRSlideCollectionViewCell.h */,
+				DBBF801F18DFB8C500A953E3 /* JCRSlideCollectionViewCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +277,7 @@
 			files = (
 				DBBF7FF118DFB4CE00A953E3 /* JCRAppDelegate.m in Sources */,
 				DBBF7FED18DFB4CE00A953E3 /* main.m in Sources */,
+				DBBF802018DFB8C500A953E3 /* JCRSlideCollectionViewCell.m in Sources */,
 				DBBF801B18DFB59A00A953E3 /* JCRViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

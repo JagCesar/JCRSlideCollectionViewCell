@@ -7,6 +7,7 @@
 //
 
 #import "JCRViewController.h"
+#import "JCRSlideCollectionViewCell.h"
 
 @interface JCRViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
@@ -30,6 +31,9 @@
     [[self collectionView] setDataSource:self];
     [[self collectionView] setDelegate:self];
     [[self view] addSubview:[self collectionView]];
+    
+    [[self collectionView] registerClass:[JCRSlideCollectionViewCell class]
+              forCellWithReuseIdentifier:NSStringFromClass([JCRSlideCollectionViewCell class])];
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,18 +46,26 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView
      numberOfItemsInSection:(NSInteger)section {
-    return 0;
+    return 10;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return nil;
+    JCRSlideCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([JCRSlideCollectionViewCell class])
+                                                                                 forIndexPath:indexPath];
+    return cell;
 }
 
 #pragma mark - UICollectionViewDelegate
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
+}
+
+#pragma mark - UI
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    return CGSizeMake(CGRectGetWidth([[self view] bounds]), 60.f);
 }
 
 @end
