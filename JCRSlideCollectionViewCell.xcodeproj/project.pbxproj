@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DBBF7FE118DFB4CE00A953E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBF7FE018DFB4CE00A953E3 /* Foundation.framework */; };
+		DBBF7FE318DFB4CE00A953E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBF7FE218DFB4CE00A953E3 /* CoreGraphics.framework */; };
+		DBBF7FE518DFB4CE00A953E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBF7FE418DFB4CE00A953E3 /* UIKit.framework */; };
+		DBBF7FEB18DFB4CE00A953E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBBF7FE918DFB4CE00A953E3 /* InfoPlist.strings */; };
+		DBBF7FED18DFB4CE00A953E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBF7FEC18DFB4CE00A953E3 /* main.m */; };
+		DBBF7FF118DFB4CE00A953E3 /* JCRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBF7FF018DFB4CE00A953E3 /* JCRAppDelegate.m */; };
+		DBBF7FF418DFB4CE00A953E3 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBBF7FF218DFB4CE00A953E3 /* Main_iPhone.storyboard */; };
+		DBBF7FF718DFB4CE00A953E3 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBBF7FF518DFB4CE00A953E3 /* Main_iPad.storyboard */; };
+		DBBF7FFA18DFB4CE00A953E3 /* JCRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBF7FF918DFB4CE00A953E3 /* JCRViewController.m */; };
+		DBBF7FFC18DFB4CE00A953E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBBF7FFB18DFB4CE00A953E3 /* Images.xcassets */; };
+		DBBF800318DFB4CE00A953E3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBF800218DFB4CE00A953E3 /* XCTest.framework */; };
+		DBBF800418DFB4CE00A953E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBF7FE018DFB4CE00A953E3 /* Foundation.framework */; };
+		DBBF800518DFB4CE00A953E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBF7FE418DFB4CE00A953E3 /* UIKit.framework */; };
+		DBBF800D18DFB4CE00A953E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBBF800B18DFB4CE00A953E3 /* InfoPlist.strings */; };
+		DBBF800F18DFB4CE00A953E3 /* JCRSlideCollectionViewCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBF800E18DFB4CE00A953E3 /* JCRSlideCollectionViewCellTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DBBF800618DFB4CE00A953E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBBF7FD518DFB4CE00A953E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBBF7FDC18DFB4CE00A953E3;
+			remoteInfo = JCRSlideCollectionViewCell;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DBBF7FDD18DFB4CE00A953E3 /* JCRSlideCollectionViewCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCRSlideCollectionViewCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBBF7FE018DFB4CE00A953E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DBBF7FE218DFB4CE00A953E3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DBBF7FE418DFB4CE00A953E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DBBF7FE818DFB4CE00A953E3 /* JCRSlideCollectionViewCell-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JCRSlideCollectionViewCell-Info.plist"; sourceTree = "<group>"; };
+		DBBF7FEA18DFB4CE00A953E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DBBF7FEC18DFB4CE00A953E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DBBF7FEE18DFB4CE00A953E3 /* JCRSlideCollectionViewCell-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCRSlideCollectionViewCell-Prefix.pch"; sourceTree = "<group>"; };
+		DBBF7FEF18DFB4CE00A953E3 /* JCRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCRAppDelegate.h; sourceTree = "<group>"; };
+		DBBF7FF018DFB4CE00A953E3 /* JCRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCRAppDelegate.m; sourceTree = "<group>"; };
+		DBBF7FF318DFB4CE00A953E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		DBBF7FF618DFB4CE00A953E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		DBBF7FF818DFB4CE00A953E3 /* JCRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCRViewController.h; sourceTree = "<group>"; };
+		DBBF7FF918DFB4CE00A953E3 /* JCRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCRViewController.m; sourceTree = "<group>"; };
+		DBBF7FFB18DFB4CE00A953E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DBBF800118DFB4CE00A953E3 /* JCRSlideCollectionViewCellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCRSlideCollectionViewCellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBBF800218DFB4CE00A953E3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DBBF800A18DFB4CE00A953E3 /* JCRSlideCollectionViewCellTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JCRSlideCollectionViewCellTests-Info.plist"; sourceTree = "<group>"; };
+		DBBF800C18DFB4CE00A953E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DBBF800E18DFB4CE00A953E3 /* JCRSlideCollectionViewCellTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCRSlideCollectionViewCellTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBBF7FDA18DFB4CE00A953E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBBF7FE318DFB4CE00A953E3 /* CoreGraphics.framework in Frameworks */,
+				DBBF7FE518DFB4CE00A953E3 /* UIKit.framework in Frameworks */,
+				DBBF7FE118DFB4CE00A953E3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBBF7FFE18DFB4CE00A953E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBBF800318DFB4CE00A953E3 /* XCTest.framework in Frameworks */,
+				DBBF800518DFB4CE00A953E3 /* UIKit.framework in Frameworks */,
+				DBBF800418DFB4CE00A953E3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DBBF7FD418DFB4CE00A953E3 = {
+			isa = PBXGroup;
+			children = (
+				DBBF7FE618DFB4CE00A953E3 /* JCRSlideCollectionViewCell */,
+				DBBF800818DFB4CE00A953E3 /* JCRSlideCollectionViewCellTests */,
+				DBBF7FDF18DFB4CE00A953E3 /* Frameworks */,
+				DBBF7FDE18DFB4CE00A953E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DBBF7FDE18DFB4CE00A953E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBBF7FDD18DFB4CE00A953E3 /* JCRSlideCollectionViewCell.app */,
+				DBBF800118DFB4CE00A953E3 /* JCRSlideCollectionViewCellTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBBF7FDF18DFB4CE00A953E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBBF7FE018DFB4CE00A953E3 /* Foundation.framework */,
+				DBBF7FE218DFB4CE00A953E3 /* CoreGraphics.framework */,
+				DBBF7FE418DFB4CE00A953E3 /* UIKit.framework */,
+				DBBF800218DFB4CE00A953E3 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBBF7FE618DFB4CE00A953E3 /* JCRSlideCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DBBF7FEF18DFB4CE00A953E3 /* JCRAppDelegate.h */,
+				DBBF7FF018DFB4CE00A953E3 /* JCRAppDelegate.m */,
+				DBBF7FF218DFB4CE00A953E3 /* Main_iPhone.storyboard */,
+				DBBF7FF518DFB4CE00A953E3 /* Main_iPad.storyboard */,
+				DBBF7FF818DFB4CE00A953E3 /* JCRViewController.h */,
+				DBBF7FF918DFB4CE00A953E3 /* JCRViewController.m */,
+				DBBF7FFB18DFB4CE00A953E3 /* Images.xcassets */,
+				DBBF7FE718DFB4CE00A953E3 /* Supporting Files */,
+			);
+			path = JCRSlideCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		DBBF7FE718DFB4CE00A953E3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBBF7FE818DFB4CE00A953E3 /* JCRSlideCollectionViewCell-Info.plist */,
+				DBBF7FE918DFB4CE00A953E3 /* InfoPlist.strings */,
+				DBBF7FEC18DFB4CE00A953E3 /* main.m */,
+				DBBF7FEE18DFB4CE00A953E3 /* JCRSlideCollectionViewCell-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DBBF800818DFB4CE00A953E3 /* JCRSlideCollectionViewCellTests */ = {
+			isa = PBXGroup;
+			children = (
+				DBBF800E18DFB4CE00A953E3 /* JCRSlideCollectionViewCellTests.m */,
+				DBBF800918DFB4CE00A953E3 /* Supporting Files */,
+			);
+			path = JCRSlideCollectionViewCellTests;
+			sourceTree = "<group>";
+		};
+		DBBF800918DFB4CE00A953E3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBBF800A18DFB4CE00A953E3 /* JCRSlideCollectionViewCellTests-Info.plist */,
+				DBBF800B18DFB4CE00A953E3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBBF7FDC18DFB4CE00A953E3 /* JCRSlideCollectionViewCell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBBF801218DFB4CE00A953E3 /* Build configuration list for PBXNativeTarget "JCRSlideCollectionViewCell" */;
+			buildPhases = (
+				DBBF7FD918DFB4CE00A953E3 /* Sources */,
+				DBBF7FDA18DFB4CE00A953E3 /* Frameworks */,
+				DBBF7FDB18DFB4CE00A953E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JCRSlideCollectionViewCell;
+			productName = JCRSlideCollectionViewCell;
+			productReference = DBBF7FDD18DFB4CE00A953E3 /* JCRSlideCollectionViewCell.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DBBF800018DFB4CE00A953E3 /* JCRSlideCollectionViewCellTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBBF801518DFB4CE00A953E3 /* Build configuration list for PBXNativeTarget "JCRSlideCollectionViewCellTests" */;
+			buildPhases = (
+				DBBF7FFD18DFB4CE00A953E3 /* Sources */,
+				DBBF7FFE18DFB4CE00A953E3 /* Frameworks */,
+				DBBF7FFF18DFB4CE00A953E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBBF800718DFB4CE00A953E3 /* PBXTargetDependency */,
+			);
+			name = JCRSlideCollectionViewCellTests;
+			productName = JCRSlideCollectionViewCellTests;
+			productReference = DBBF800118DFB4CE00A953E3 /* JCRSlideCollectionViewCellTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBBF7FD518DFB4CE00A953E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JCR;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = JagCesar;
+				TargetAttributes = {
+					DBBF800018DFB4CE00A953E3 = {
+						TestTargetID = DBBF7FDC18DFB4CE00A953E3;
+					};
+				};
+			};
+			buildConfigurationList = DBBF7FD818DFB4CE00A953E3 /* Build configuration list for PBXProject "JCRSlideCollectionViewCell" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBBF7FD418DFB4CE00A953E3;
+			productRefGroup = DBBF7FDE18DFB4CE00A953E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBBF7FDC18DFB4CE00A953E3 /* JCRSlideCollectionViewCell */,
+				DBBF800018DFB4CE00A953E3 /* JCRSlideCollectionViewCellTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBBF7FDB18DFB4CE00A953E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBBF7FF718DFB4CE00A953E3 /* Main_iPad.storyboard in Resources */,
+				DBBF7FFC18DFB4CE00A953E3 /* Images.xcassets in Resources */,
+				DBBF7FF418DFB4CE00A953E3 /* Main_iPhone.storyboard in Resources */,
+				DBBF7FEB18DFB4CE00A953E3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBBF7FFF18DFB4CE00A953E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBBF800D18DFB4CE00A953E3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBBF7FD918DFB4CE00A953E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBBF7FF118DFB4CE00A953E3 /* JCRAppDelegate.m in Sources */,
+				DBBF7FED18DFB4CE00A953E3 /* main.m in Sources */,
+				DBBF7FFA18DFB4CE00A953E3 /* JCRViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBBF7FFD18DFB4CE00A953E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBBF800F18DFB4CE00A953E3 /* JCRSlideCollectionViewCellTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBBF800718DFB4CE00A953E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBBF7FDC18DFB4CE00A953E3 /* JCRSlideCollectionViewCell */;
+			targetProxy = DBBF800618DFB4CE00A953E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DBBF7FE918DFB4CE00A953E3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBBF7FEA18DFB4CE00A953E3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DBBF7FF218DFB4CE00A953E3 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBBF7FF318DFB4CE00A953E3 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		DBBF7FF518DFB4CE00A953E3 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBBF7FF618DFB4CE00A953E3 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		DBBF800B18DFB4CE00A953E3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBBF800C18DFB4CE00A953E3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBBF801018DFB4CE00A953E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DBBF801118DFB4CE00A953E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBBF801318DFB4CE00A953E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JCRSlideCollectionViewCell/JCRSlideCollectionViewCell-Prefix.pch";
+				INFOPLIST_FILE = "JCRSlideCollectionViewCell/JCRSlideCollectionViewCell-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DBBF801418DFB4CE00A953E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JCRSlideCollectionViewCell/JCRSlideCollectionViewCell-Prefix.pch";
+				INFOPLIST_FILE = "JCRSlideCollectionViewCell/JCRSlideCollectionViewCell-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DBBF801618DFB4CE00A953E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JCRSlideCollectionViewCell.app/JCRSlideCollectionViewCell";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JCRSlideCollectionViewCell/JCRSlideCollectionViewCell-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JCRSlideCollectionViewCellTests/JCRSlideCollectionViewCellTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DBBF801718DFB4CE00A953E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JCRSlideCollectionViewCell.app/JCRSlideCollectionViewCell";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JCRSlideCollectionViewCell/JCRSlideCollectionViewCell-Prefix.pch";
+				INFOPLIST_FILE = "JCRSlideCollectionViewCellTests/JCRSlideCollectionViewCellTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBBF7FD818DFB4CE00A953E3 /* Build configuration list for PBXProject "JCRSlideCollectionViewCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBBF801018DFB4CE00A953E3 /* Debug */,
+				DBBF801118DFB4CE00A953E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBBF801218DFB4CE00A953E3 /* Build configuration list for PBXNativeTarget "JCRSlideCollectionViewCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBBF801318DFB4CE00A953E3 /* Debug */,
+				DBBF801418DFB4CE00A953E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DBBF801518DFB4CE00A953E3 /* Build configuration list for PBXNativeTarget "JCRSlideCollectionViewCellTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBBF801618DFB4CE00A953E3 /* Debug */,
+				DBBF801718DFB4CE00A953E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBBF7FD518DFB4CE00A953E3 /* Project object */;
+}
