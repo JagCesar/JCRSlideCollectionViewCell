@@ -6,5 +6,13 @@ Instead of using UITableView I decided to use UICollectionView. This because I'v
 
 ## How do I use it?
 
-The easiest way would be to add it to your project using cocoapods. If you don't have that installed you write the following in your terminal:
-- sudo gem install cocoapods
+Copy JCRSlideCollectionViewCell.h and JCRSlideCollectionViewCell.m to your project, import it and return an instance of this cell in the selector
+
+`- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+`
+
+Check out JCRViewController.m in this view controller to get more information on how it's used.
+
+Hit me back with any ideas!
+
+/C
