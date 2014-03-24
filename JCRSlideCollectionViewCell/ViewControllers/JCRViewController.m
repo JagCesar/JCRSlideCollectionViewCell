@@ -23,11 +23,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self setCollectionViewFlowLayout:[UICollectionViewFlowLayout new]];
+    [[self collectionViewFlowLayout] setMinimumLineSpacing:1.f];
     
     [self setCollectionView:[[UICollectionView alloc] initWithFrame:[[self view] bounds]
                                                collectionViewLayout:[self collectionViewFlowLayout]]];
-    
     [[self collectionView] setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
+    [[self collectionView] setBackgroundColor:[UIColor colorWithWhite:.95f alpha:1.f]];
     [[self collectionView] setDataSource:self];
     [[self collectionView] setDelegate:self];
     [[self view] addSubview:[self collectionView]];

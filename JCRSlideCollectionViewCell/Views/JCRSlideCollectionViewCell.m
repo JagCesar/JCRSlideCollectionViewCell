@@ -61,7 +61,7 @@ static const CGFloat imageBorderMargin = 20.f;
         [[self draggableContentView] setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
         [[self scrollView] addSubview:[self draggableContentView]];
         
-        [[self contentView] setBackgroundColor:[UIColor redColor]];
+        [[self contentView] setBackgroundColor:[UIColor whiteColor]];
     }
     return self;
 }
