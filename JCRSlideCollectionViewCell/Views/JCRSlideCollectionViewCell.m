@@ -82,9 +82,31 @@ static const CGFloat imageBorderMargin = 20.f;
     if (xOffset < 0) {
         // Draggable content view is dragged right
         [[self leftImageView] setAlpha:alpha];
+        if (alpha >= 1.f) {
+            [[self leftImageView] setFrame:CGRectMake(fabsf(xOffset)-imageWidth,
+                                                      CGRectGetHeight([[self contentView] bounds])/2-imageHeight/2,
+                                                      imageWidth,
+                                                      imageHeight)];
+        } else {
+            [[self leftImageView] setFrame:CGRectMake(imageBorderMargin,
+                                                      CGRectGetHeight([[self contentView] bounds])/2-imageHeight/2,
+                                                      imageWidth,
+                                                      imageHeight)];
+        }
     } else if (xOffset > 0) {
         // Draggable content view is dragged left
         [[self rightImageView] setAlpha:alpha];
+        if (alpha >= 1.f) {
+            [[self rightImageView] setFrame:CGRectMake(CGRectGetWidth([[self contentView] bounds])-xOffset,
+                                                       CGRectGetHeight([[self contentView] bounds])/2-imageHeight/2,
+                                                       imageWidth,
+                                                       imageHeight)];
+        } else {
+            [[self rightImageView] setFrame:CGRectMake(CGRectGetWidth([[self contentView] bounds])-imageBorderMargin-imageWidth,
+                                                       CGRectGetHeight([[self contentView] bounds])/2-imageHeight/2,
+                                                       imageWidth,
+                                                       imageHeight)];
+        }
     }
 }
 
