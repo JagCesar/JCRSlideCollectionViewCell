@@ -7,7 +7,7 @@
 //
 
 #import "JCRViewController.h"
-#import "JCRSlideCollectionViewCell.h"
+#import "JCRLabelSlideCollectionViewCell.h"
 
 @interface JCRViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
@@ -32,8 +32,8 @@
     [[self collectionView] setDelegate:self];
     [[self view] addSubview:[self collectionView]];
     
-    [[self collectionView] registerClass:[JCRSlideCollectionViewCell class]
-              forCellWithReuseIdentifier:NSStringFromClass([JCRSlideCollectionViewCell class])];
+    [[self collectionView] registerClass:[JCRLabelSlideCollectionViewCell class]
+              forCellWithReuseIdentifier:NSStringFromClass([JCRLabelSlideCollectionViewCell class])];
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,8 +61,9 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    JCRSlideCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([JCRSlideCollectionViewCell class])
+    JCRLabelSlideCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([JCRLabelSlideCollectionViewCell class])
                                                                                  forIndexPath:indexPath];
+    [[cell label] setText:[NSString stringWithFormat:@"Row %ld", [indexPath row]]];
     return cell;
 }
 

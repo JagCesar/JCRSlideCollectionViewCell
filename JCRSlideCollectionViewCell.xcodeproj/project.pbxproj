@@ -23,6 +23,7 @@
 		DBBF800F18DFB4CE00A953E3 /* JCRSlideCollectionViewCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBF800E18DFB4CE00A953E3 /* JCRSlideCollectionViewCellTests.m */; };
 		DBBF801B18DFB59A00A953E3 /* JCRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBF801A18DFB59A00A953E3 /* JCRViewController.m */; };
 		DBBF802018DFB8C500A953E3 /* JCRSlideCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBF801F18DFB8C500A953E3 /* JCRSlideCollectionViewCell.m */; };
+		DBBF802318DFC1E200A953E3 /* JCRLabelSlideCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBF802218DFC1E200A953E3 /* JCRLabelSlideCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		DBBF801A18DFB59A00A953E3 /* JCRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRViewController.m; sourceTree = "<group>"; };
 		DBBF801E18DFB8C500A953E3 /* JCRSlideCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCRSlideCollectionViewCell.h; sourceTree = "<group>"; };
 		DBBF801F18DFB8C500A953E3 /* JCRSlideCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRSlideCollectionViewCell.m; sourceTree = "<group>"; };
+		DBBF802118DFC1E200A953E3 /* JCRLabelSlideCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCRLabelSlideCollectionViewCell.h; sourceTree = "<group>"; };
+		DBBF802218DFC1E200A953E3 /* JCRLabelSlideCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRLabelSlideCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +175,8 @@
 			children = (
 				DBBF801E18DFB8C500A953E3 /* JCRSlideCollectionViewCell.h */,
 				DBBF801F18DFB8C500A953E3 /* JCRSlideCollectionViewCell.m */,
+				DBBF802118DFC1E200A953E3 /* JCRLabelSlideCollectionViewCell.h */,
+				DBBF802218DFC1E200A953E3 /* JCRLabelSlideCollectionViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -275,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBBF802318DFC1E200A953E3 /* JCRLabelSlideCollectionViewCell.m in Sources */,
 				DBBF7FF118DFB4CE00A953E3 /* JCRAppDelegate.m in Sources */,
 				DBBF7FED18DFB4CE00A953E3 /* main.m in Sources */,
 				DBBF802018DFB8C500A953E3 /* JCRSlideCollectionViewCell.m in Sources */,
