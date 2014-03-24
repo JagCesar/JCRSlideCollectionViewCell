@@ -65,7 +65,7 @@
                                                                                       forIndexPath:indexPath];
     [cell setLeftBlock:^{
         UIAlertView *view = [[UIAlertView alloc] initWithTitle:@"Left"
-                                                       message:@"Left action!"
+                                                       message:[NSString stringWithFormat:@"Left action on row %ld", [indexPath row]]
                                                       delegate:nil
                                              cancelButtonTitle:nil
                                              otherButtonTitles:@"Ok", nil];
@@ -74,7 +74,7 @@
     
     [cell setRightBlock:^{
         UIAlertView *view = [[UIAlertView alloc] initWithTitle:@"Right"
-                                                       message:@"Right action!"
+                                                       message:[NSString stringWithFormat:@"Right action on row %ld", [indexPath row]]
                                                       delegate:nil
                                              cancelButtonTitle:nil
                                              otherButtonTitles:@"Ok", nil];
