@@ -93,6 +93,10 @@ static const CGFloat imageBorderMargin = 20.f;
     CGFloat alpha = fabsf(xOffset)/(imageBorderMargin+imageWidth);
     if (xOffset < 0) {
         // Draggable content view is dragged right
+        if (![self leftBlock]) {
+            return;
+        }
+        
         [[self leftImageView] setAlpha:alpha];
         if (alpha >= 1.f) {
             [[self leftImageView] setFrame:CGRectMake(fabsf(xOffset)-imageWidth,
@@ -107,6 +111,9 @@ static const CGFloat imageBorderMargin = 20.f;
         }
     } else if (xOffset > 0) {
         // Draggable content view is dragged left
+        if (![self rightBlock]) {
+            return;
+        }
         [[self rightImageView] setAlpha:alpha];
         if (alpha >= 1.f) {
             [[self rightImageView] setFrame:CGRectMake(CGRectGetWidth([[self contentView] bounds])-xOffset,
