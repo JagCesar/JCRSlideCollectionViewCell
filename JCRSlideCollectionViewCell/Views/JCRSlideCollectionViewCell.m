@@ -78,13 +78,13 @@ static const CGFloat imageBorderMargin = 20.f;
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     CGFloat xOffset = [scrollView contentOffset].x;
+    CGFloat alpha = fabsf(xOffset)/(imageBorderMargin+imageWidth);
     if (xOffset < 0) {
         // Draggable content view is dragged right
-        xOffset = fabsf(xOffset);
-        [[self leftImageView] setAlpha:xOffset/(imageBorderMargin+imageWidth)];
+        [[self leftImageView] setAlpha:alpha];
     } else if (xOffset > 0) {
         // Draggable content view is dragged left
-        [[self rightImageView] setAlpha:xOffset/(imageBorderMargin+imageWidth)];
+        [[self rightImageView] setAlpha:alpha];
     }
 }
 
