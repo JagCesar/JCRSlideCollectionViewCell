@@ -15,13 +15,13 @@
 		DBBF7FF118DFB4CE00A953E3 /* JCRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBF7FF018DFB4CE00A953E3 /* JCRAppDelegate.m */; };
 		DBBF7FF418DFB4CE00A953E3 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBBF7FF218DFB4CE00A953E3 /* Main_iPhone.storyboard */; };
 		DBBF7FF718DFB4CE00A953E3 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBBF7FF518DFB4CE00A953E3 /* Main_iPad.storyboard */; };
-		DBBF7FFA18DFB4CE00A953E3 /* JCRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBF7FF918DFB4CE00A953E3 /* JCRViewController.m */; };
 		DBBF7FFC18DFB4CE00A953E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBBF7FFB18DFB4CE00A953E3 /* Images.xcassets */; };
 		DBBF800318DFB4CE00A953E3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBF800218DFB4CE00A953E3 /* XCTest.framework */; };
 		DBBF800418DFB4CE00A953E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBF7FE018DFB4CE00A953E3 /* Foundation.framework */; };
 		DBBF800518DFB4CE00A953E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBF7FE418DFB4CE00A953E3 /* UIKit.framework */; };
 		DBBF800D18DFB4CE00A953E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBBF800B18DFB4CE00A953E3 /* InfoPlist.strings */; };
 		DBBF800F18DFB4CE00A953E3 /* JCRSlideCollectionViewCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBF800E18DFB4CE00A953E3 /* JCRSlideCollectionViewCellTests.m */; };
+		DBBF801B18DFB59A00A953E3 /* JCRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBF801A18DFB59A00A953E3 /* JCRViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,14 +47,14 @@
 		DBBF7FF018DFB4CE00A953E3 /* JCRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCRAppDelegate.m; sourceTree = "<group>"; };
 		DBBF7FF318DFB4CE00A953E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		DBBF7FF618DFB4CE00A953E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		DBBF7FF818DFB4CE00A953E3 /* JCRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCRViewController.h; sourceTree = "<group>"; };
-		DBBF7FF918DFB4CE00A953E3 /* JCRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCRViewController.m; sourceTree = "<group>"; };
 		DBBF7FFB18DFB4CE00A953E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DBBF800118DFB4CE00A953E3 /* JCRSlideCollectionViewCellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCRSlideCollectionViewCellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBBF800218DFB4CE00A953E3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		DBBF800A18DFB4CE00A953E3 /* JCRSlideCollectionViewCellTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JCRSlideCollectionViewCellTests-Info.plist"; sourceTree = "<group>"; };
 		DBBF800C18DFB4CE00A953E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DBBF800E18DFB4CE00A953E3 /* JCRSlideCollectionViewCellTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCRSlideCollectionViewCellTests.m; sourceTree = "<group>"; };
+		DBBF801918DFB59A00A953E3 /* JCRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCRViewController.h; sourceTree = "<group>"; };
+		DBBF801A18DFB59A00A953E3 /* JCRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,9 +118,8 @@
 				DBBF7FF018DFB4CE00A953E3 /* JCRAppDelegate.m */,
 				DBBF7FF218DFB4CE00A953E3 /* Main_iPhone.storyboard */,
 				DBBF7FF518DFB4CE00A953E3 /* Main_iPad.storyboard */,
-				DBBF7FF818DFB4CE00A953E3 /* JCRViewController.h */,
-				DBBF7FF918DFB4CE00A953E3 /* JCRViewController.m */,
 				DBBF7FFB18DFB4CE00A953E3 /* Images.xcassets */,
+				DBBF801818DFB59A00A953E3 /* ViewControllers */,
 				DBBF7FE718DFB4CE00A953E3 /* Supporting Files */,
 			);
 			path = JCRSlideCollectionViewCell;
@@ -153,6 +152,15 @@
 				DBBF800B18DFB4CE00A953E3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DBBF801818DFB59A00A953E3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DBBF801918DFB59A00A953E3 /* JCRViewController.h */,
+				DBBF801A18DFB59A00A953E3 /* JCRViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +264,7 @@
 			files = (
 				DBBF7FF118DFB4CE00A953E3 /* JCRAppDelegate.m in Sources */,
 				DBBF7FED18DFB4CE00A953E3 /* main.m in Sources */,
-				DBBF7FFA18DFB4CE00A953E3 /* JCRViewController.m in Sources */,
+				DBBF801B18DFB59A00A953E3 /* JCRViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +479,7 @@
 				DBBF801418DFB4CE00A953E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DBBF801518DFB4CE00A953E3 /* Build configuration list for PBXNativeTarget "JCRSlideCollectionViewCellTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +488,7 @@
 				DBBF801718DFB4CE00A953E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
