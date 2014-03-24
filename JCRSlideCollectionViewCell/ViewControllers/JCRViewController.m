@@ -42,6 +42,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
+    [super didRotateFromInterfaceOrientation:fromInterfaceOrientation];
+    
+    [[self collectionView] performBatchUpdates:^{
+        [[self collectionViewFlowLayout] invalidateLayout];
+    } completion:^(BOOL finished) {
+        
+    }];
+}
+
 #pragma mark - UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView
