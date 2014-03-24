@@ -10,6 +10,8 @@
 
 @interface JCRSlideCollectionViewCell : UICollectionViewCell
 
+@property (nonatomic) UIImage *leftImage;
+@property (nonatomic) UIImage *rightImage;
 @property (nonatomic, copy) void (^leftBlock)(void);
 @property (nonatomic, copy) void (^rightBlock)(void);
 

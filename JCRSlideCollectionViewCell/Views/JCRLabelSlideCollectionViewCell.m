@@ -25,6 +25,9 @@
         [[self label] setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
         [[self label] setFrame:CGRectInset([[self contentView] bounds], 10.f, 0.f)];
         [[self contentView] addSubview:[self label]];
+        
+        [self setLeftImage:[[UIImage imageNamed:@"like"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate]];
+        [self setRightImage:[[UIImage imageNamed:@"trash"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate]];
     }
     return self;
 }

@@ -30,13 +30,12 @@ static const CGFloat imageBorderMargin = 20.f;
         // Initialization code
         
         [self setLeftImageView:[UIImageView new]];
-        [[self leftImageView] setContentMode:UIViewContentModeCenter];
+        [[self leftImageView] setContentMode:UIViewContentModeScaleAspectFit];
         [[self leftImageView] setFrame:CGRectMake(imageBorderMargin,
                                                   CGRectGetHeight(frame)/2-imageHeight/2,
                                                   imageWidth,
                                                   imageHeight)];
         [[self leftImageView] setAutoresizingMask:UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleRightMargin];
-        [[self leftImageView] setBackgroundColor:[UIColor purpleColor]];
         [[self leftImageView] setAlpha:0.f];
         [[super contentView] addSubview:[self leftImageView]];
         
@@ -47,7 +46,6 @@ static const CGFloat imageBorderMargin = 20.f;
                                                    imageWidth,
                                                    imageHeight)];
         [[self rightImageView] setAutoresizingMask:UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleLeftMargin];
-        [[self rightImageView] setBackgroundColor:[UIColor purpleColor]];
         [[self rightImageView] setAlpha:0.f];
         [[super contentView] addSubview:[self rightImageView]];
         
@@ -72,6 +70,20 @@ static const CGFloat imageBorderMargin = 20.f;
 
 - (UIView *)contentView {
     return [self draggableContentView];
+}
+
+- (void)setLeftImage:(UIImage *)leftImage {
+    if (_leftImage != leftImage) {
+        _leftImage = leftImage;
+        [[self leftImageView] setImage:[self leftImage]];
+    }
+}
+
+- (void)setRightImage:(UIImage *)rightImage {
+    if (_rightImage != rightImage) {
+        _rightImage = rightImage;
+        [[self rightImageView] setImage:[self rightImage]];
+    }
 }
 
 #pragma mark - UIScrollViewDelegate
