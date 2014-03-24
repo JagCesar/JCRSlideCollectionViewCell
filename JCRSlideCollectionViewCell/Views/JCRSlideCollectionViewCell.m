@@ -88,4 +88,21 @@ static const CGFloat imageBorderMargin = 20.f;
     }
 }
 
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView
+                  willDecelerate:(BOOL)decelerate {
+    CGFloat xOffset = [scrollView contentOffset].x;
+    CGFloat alpha = fabsf(xOffset)/(imageBorderMargin+imageWidth);
+    if (xOffset < 0) {
+        // Draggable content view was dragged right
+        if (alpha >= 1.f && [self leftBlock]) {
+            self.leftBlock();
+        }
+    } else if (xOffset > 0) {
+        // Draggable content view is dragged left
+        if (alpha >= 1.f && [self rightBlock]) {
+            self.rightBlock();
+        }
+    }
+}
+
 @end

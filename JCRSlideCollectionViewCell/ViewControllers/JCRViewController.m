@@ -62,7 +62,25 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     JCRLabelSlideCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([JCRLabelSlideCollectionViewCell class])
-                                                                                 forIndexPath:indexPath];
+                                                                                      forIndexPath:indexPath];
+    [cell setLeftBlock:^{
+        UIAlertView *view = [[UIAlertView alloc] initWithTitle:@"Left"
+                                                       message:@"Left action!"
+                                                      delegate:nil
+                                             cancelButtonTitle:nil
+                                             otherButtonTitles:@"Ok", nil];
+        [view show];
+    }];
+    
+    [cell setRightBlock:^{
+        UIAlertView *view = [[UIAlertView alloc] initWithTitle:@"Right"
+                                                       message:@"Right action!"
+                                                      delegate:nil
+                                             cancelButtonTitle:nil
+                                             otherButtonTitles:@"Ok", nil];
+        [view show];
+    }];
+    
     [[cell label] setText:[NSString stringWithFormat:@"Row %ld", [indexPath row]]];
     return cell;
 }
