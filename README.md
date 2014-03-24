@@ -4,6 +4,8 @@ I've seen many apps that have cells that can be swiped sideways to do certain ac
 
 Instead of using UITableViewCell I decided to use UICollectionViewCell. This because I've stopped using UITableView and am always using UICollectionView nowadays.
 
+![Output sample](https://raw.githubusercontent.com/JagCesar/JCRSlideCollectionViewCell/master/demo.gif)
+
 ## How do I use it?
 
 Copy JCRSlideCollectionViewCell.h and JCRSlideCollectionViewCell.m to your project, import it and return an instance of this cell in the selector
