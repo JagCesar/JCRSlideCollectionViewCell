@@ -23,7 +23,7 @@
         // Initialization code
         [self setLabel:[UILabel new]];
         [[self label] setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
-        [[self label] setFrame:[[self contentView] bounds]];
+        [[self label] setFrame:CGRectInset([[self contentView] bounds], 10.f, 0.f)];
         [[self contentView] addSubview:[self label]];
     }
     return self;
