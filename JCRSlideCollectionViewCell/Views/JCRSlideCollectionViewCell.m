@@ -7,12 +7,14 @@
 //
 
 #import "JCRSlideCollectionViewCell.h"
+#import "JCRTapGestureRecognizer.h"
+#import <UIKit/UICollectionView.h>
 
 static const CGFloat imageWidth = 22.f;
 static const CGFloat imageHeight = 22.f;
 static const CGFloat imageBorderMargin = 20.f;
 
-@interface JCRSlideCollectionViewCell () <UIScrollViewDelegate>
+@interface JCRSlideCollectionViewCell () <UIScrollViewDelegate, JCRTapGestureRecognizerDelegate>
 
 @property (nonatomic) UIScrollView *scrollView;
 @property (nonatomic) UIView *draggableContentView;
@@ -61,6 +63,10 @@ static const CGFloat imageBorderMargin = 20.f;
         [[self draggableContentView] setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
         [[self scrollView] addSubview:[self draggableContentView]];
         
+        JCRTapGestureRecognizer *tapGesture = [JCRTapGestureRecognizer new];
+        [tapGesture setDelegate:self];
+        [self addGestureRecognizer:tapGesture];
+        
         [[self contentView] setBackgroundColor:[UIColor whiteColor]];
     }
     return self;
@@ -83,6 +89,29 @@ static const CGFloat imageBorderMargin = 20.f;
     if (_rightImage != rightImage) {
         _rightImage = rightImage;
         [[self rightImageView] setImage:[self rightImage]];
+    }
+}
+
+#pragma mark - JCRTapGestureRecognizerDelegate
+
+- (void)tapGestureEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    if ([self superview] && [[self superview] isKindOfClass:[UICollectionView class]]) {
+        UICollectionView *collectionView = (UICollectionView*)[self superview];
+        NSIndexPath *indexPath = [collectionView indexPathForCell:self];
+        BOOL shouldSelect = YES;
+        if ([[collectionView delegate] respondsToSelector:@selector(collectionView:shouldSelectItemAtIndexPath:)]) {
+            shouldSelect = [[collectionView delegate] collectionView:collectionView
+                                         shouldSelectItemAtIndexPath:indexPath];
+        }
+        if (shouldSelect) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [collectionView selectItemAtIndexPath:indexPath
+                                             animated:YES
+                                       scrollPosition:UICollectionViewScrollPositionNone];
+                [[collectionView delegate] collectionView:collectionView
+                                 didSelectItemAtIndexPath:indexPath];
+            });
+        }
     }
 }
 

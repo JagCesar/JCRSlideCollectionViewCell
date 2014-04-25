@@ -24,6 +24,7 @@
 		DBBF801B18DFB59A00A953E3 /* JCRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBF801A18DFB59A00A953E3 /* JCRViewController.m */; };
 		DBBF802018DFB8C500A953E3 /* JCRSlideCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBF801F18DFB8C500A953E3 /* JCRSlideCollectionViewCell.m */; };
 		DBBF802318DFC1E200A953E3 /* JCRLabelSlideCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBF802218DFC1E200A953E3 /* JCRLabelSlideCollectionViewCell.m */; };
+		DBC82800190ACE560000646D /* JCRTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC827FF190ACE550000646D /* JCRTapGestureRecognizer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		DBBF801F18DFB8C500A953E3 /* JCRSlideCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRSlideCollectionViewCell.m; sourceTree = "<group>"; };
 		DBBF802118DFC1E200A953E3 /* JCRLabelSlideCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCRLabelSlideCollectionViewCell.h; sourceTree = "<group>"; };
 		DBBF802218DFC1E200A953E3 /* JCRLabelSlideCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRLabelSlideCollectionViewCell.m; sourceTree = "<group>"; };
+		DBC827FE190ACE550000646D /* JCRTapGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCRTapGestureRecognizer.h; sourceTree = "<group>"; };
+		DBC827FF190ACE550000646D /* JCRTapGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRTapGestureRecognizer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,7 @@
 				DBBF7FF218DFB4CE00A953E3 /* Main_iPhone.storyboard */,
 				DBBF7FF518DFB4CE00A953E3 /* Main_iPad.storyboard */,
 				DBBF7FFB18DFB4CE00A953E3 /* Images.xcassets */,
+				DBC827FD190ACE430000646D /* GestureRecognizers */,
 				DBBF801818DFB59A00A953E3 /* ViewControllers */,
 				DBBF801D18DFB8A500A953E3 /* Views */,
 				DBBF7FE718DFB4CE00A953E3 /* Supporting Files */,
@@ -179,6 +183,15 @@
 				DBBF802218DFC1E200A953E3 /* JCRLabelSlideCollectionViewCell.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DBC827FD190ACE430000646D /* GestureRecognizers */ = {
+			isa = PBXGroup;
+			children = (
+				DBC827FE190ACE550000646D /* JCRTapGestureRecognizer.h */,
+				DBC827FF190ACE550000646D /* JCRTapGestureRecognizer.m */,
+			);
+			path = GestureRecognizers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +298,7 @@
 				DBBF7FED18DFB4CE00A953E3 /* main.m in Sources */,
 				DBBF802018DFB8C500A953E3 /* JCRSlideCollectionViewCell.m in Sources */,
 				DBBF801B18DFB59A00A953E3 /* JCRViewController.m in Sources */,
+				DBC82800190ACE560000646D /* JCRTapGestureRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

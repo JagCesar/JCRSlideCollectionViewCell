@@ -89,7 +89,7 @@
 #pragma mark - UICollectionViewDelegate
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    
+    NSLog(@"Select cell at row: %ld in section: %ld", (long)[indexPath row], (long)[indexPath section]);
 }
 
 #pragma mark - UI
